@@ -22,8 +22,8 @@ public class CSVUtilities {
 		 reader = new FileReader(csv);
 
 		 filein = new BufferedReader(reader);
-		 //String line = filein.readLine();
 		 
+		
 		}
 		catch (FileNotFoundException fnfe)
 		{
