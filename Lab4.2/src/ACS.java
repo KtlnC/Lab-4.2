@@ -1,5 +1,5 @@
 /**Created by Kaitlyn Cao on 12/20/2017
- * Lab 4.2 	ACS*/
+ * Lab 4.2 ACS*/
 public class ACS {
 
 	private String location;
@@ -57,6 +57,6 @@ public class ACS {
 	
 	public String toString()
 	{
-		return "";
+		return "Cases [Location=" + location + ", # of Cases Opened=" + casesOpened + ", Percent of Borough Total=" + percentOfBoroughTotal + ", Percent of Citywide Total=" + percentOfCitywideTotal + "]";
 	}
 }
