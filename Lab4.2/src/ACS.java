@@ -55,8 +55,9 @@ public class ACS {
 		this.percentOfCitywideTotal = percentOfCitywideTotal;
 	}
 	
-	public String toString()
+/*	public String toString()
 	{
 		return "Cases [Location=" + location + ", # of Cases Opened=" + casesOpened + ", Percent of Borough Total=" + percentOfBoroughTotal + ", Percent of Citywide Total=" + percentOfCitywideTotal + "]";
 	}
+*/
 }

@@ -29,7 +29,7 @@ public class CSVUtilities {
 		 {
 			 String[] cases = line.split(",");
 			 
-			 //System.out.println("Case [Location= ")
+			 System.out.println("Cases [Location=" + cases[0] + ", # of Cases Opened=" + cases[1] + ", Percent of Borough Total=" + cases[2] + ", Percent of Citywide Total=" + cases[3] + "]");
 		 }
 		
 		}
@@ -42,6 +42,8 @@ public class CSVUtilities {
 			e.printStackTrace();
 		}
 	}
+	
+/*	
 	public List<String> getColumnHeaders()
 	{
 		return CSVData;
@@ -66,4 +68,5 @@ public class CSVUtilities {
 	{
 		return null;
 	}
+*/
 }
