@@ -42,7 +42,10 @@ public class CSVUtilities {
 			e.printStackTrace();
 		}
 	}
-	
+/**
+ * 1/8/18
+ * Add a writeCSV(File file) method
+ * */	
 /*	
 	public List<String> getColumnHeaders()
 	{
