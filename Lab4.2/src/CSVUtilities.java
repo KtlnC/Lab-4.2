@@ -16,20 +16,24 @@ public class CSVUtilities {
 	
 	public CSVUtilities(File csv)
 	{
+		
 		FileReader reader = null;
 		BufferedReader filein = null;
 		
 		try
 		{
-		 reader = new FileReader("Preventive_New_Cases_CY2016_Table.csv");
+		 reader = new FileReader(csv);
 		 filein = new BufferedReader(reader);
 		 
 		 String line = filein.readLine();
 		 while(line != null)
 		 {
+			 
 			 String[] cases = line.split(",");
 			 
-			 System.out.println("Cases [Location=" + cases[0] + ", # of Cases Opened=" + cases[1] + ", Percent of Borough Total=" + cases[2] + ", Percent of Citywide Total=" + cases[3] + "]");
+			 CSVData.add(line);
+		 
+			 line = filein.readLine();
 		 }
 		
 		}
@@ -42,32 +46,36 @@ public class CSVUtilities {
 			e.printStackTrace();
 		}
 	}
+	
+
 /**
  * 1/8/18
  * Add a writeCSV(File file) method
  * */	
 /*	
+   //Return an ArrayList with the headers for each column
 	public List<String> getColumnHeaders()
 	{
 		return CSVData;
 	}
 	
-	//Return
-	public List<String> getDataString(int column)
+	//Return an ArrayList with the data for a column specified
+	public List<String> getDataString(String column)
 	{
+		
 		return CSVData;
 		
 	}
 	
 	//Return an ArrayList with the data converted to Integer
-	public List<Integer> getDataInt(int column)
+	public List<Integer> getDataInt(List column)
 	{
 		return null;
 		
 	}
 	
 	//Return an ArrayList with the data converted to Double
-	public List<Double> getDataDouble(int column)
+	public List<Double> getDataDouble(double column)
 	{
 		return null;
 	}
